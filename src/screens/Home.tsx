@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react"
 import { HeroSectionOne } from "../components/Hero"
+import Features from "../components/Features"
 
 
 const Home = () => {
@@ -27,9 +28,10 @@ const Home = () => {
         <button className="border border-neutral-300 shadow-xl text-neutral-500 p-3 rounded-3xl">Solutions</button>
       <h1 className="header-text text-5xl font-normal mt-10 bebas">Solve Your Team's <br /> biggest challenges</h1>
       </motion.div>
-   <div className="body">
    
-   </div>
+    </div>
+    <div className="feature-body w-full flex justify-center items-center ">
+      <Features/>
     </div>
     </>
   )
