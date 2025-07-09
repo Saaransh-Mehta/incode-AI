@@ -1,0 +1,28 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Envelope base -->
+  <rect x="50" y="120" width="400" height="130" rx="10" fill="#e0e0e0"/>
+  <polygon points="50,120 250,250 450,120" fill="#f5f5f5"/>
+
+  <!-- CSV file -->
+  <g transform="rotate(-15,120,100)">
+    <rect x="90" y="40" width="80" height="100" rx="10" fill="#34A853"/>
+    <polygon points="150,40 170,60 150,60" fill="#2C8D46"/>
+    <text x="100" y="100" font-size="24" fill="white" font-family="Arial" font-weight="bold">CSV</text>
+  </g>
+
+  <!-- PDF file -->
+  <g transform="rotate(0,240,100)">
+    <rect x="200" y="40" width="80" height="100" rx="10" fill="#EA4335"/>
+    <polygon points="260,40 280,60 260,60" fill="#C23321"/>
+    <text x="210" y="100" font-size="24" fill="white" font-family="Arial" font-weight="bold">PDF</text>
+  </g>
+
+  <!-- DOC file -->
+  <g transform="rotate(15,360,100)">
+    <rect x="310" y="40" width="80" height="100" rx="10" fill="#4285F4"/>
+    <polygon points="370,40 390,60 370,60" fill="#3367D6"/>
+    <line x1="325" y1="70" x2="375" y2="70" stroke="white" stroke-width="4"/>
+    <line x1="325" y1="85" x2="375" y2="85" stroke="white" stroke-width="4"/>
+    <line x1="325" y1="100" x2="375" y2="100" stroke="white" stroke-width="4"/>
+  </g>
+</svg>

@@ -3,6 +3,7 @@
 import { motion } from "motion/react"
 import { HeroSectionOne } from "../components/Hero"
 import Features from "../components/Features"
+import Testimonials from "../components/Testimonials"
 
 
 const Home = () => {
@@ -32,6 +33,9 @@ const Home = () => {
     </div>
     <div className="feature-body w-full flex justify-center items-center ">
       <Features/>
+    </div>
+    <div className="testimonials">
+      <Testimonials/>
     </div>
     </>
   )

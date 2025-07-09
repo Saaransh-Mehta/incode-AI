@@ -10,10 +10,9 @@ export function CardDemo() {
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
-      <CardTitle>Damn good card</CardTitle>
+      <CardTitle>All in one </CardTitle>
       <CardDescription>
-        A card that showcases a set of tools that you use to create your
-        product.
+       Integrate with any of other AI tools
       </CardDescription>
     </Card>
   );
