@@ -4,6 +4,8 @@ import { motion } from "motion/react"
 import { HeroSectionOne } from "../components/Hero"
 import Features from "../components/Features"
 import Testimonials from "../components/Testimonials"
+import Faq from "../components/Faq"
+import Pricing from "../components/Pricing"
 
 
 const Home = () => {
@@ -36,6 +38,12 @@ const Home = () => {
     </div>
     <div className="testimonials">
       <Testimonials/>
+    </div>
+    <div className="faq">
+      <Faq/>
+    </div>
+    <div className="pricing">
+      <Pricing/>
     </div>
     </>
   )
