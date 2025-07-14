@@ -6,6 +6,7 @@ import Features from "../components/Features"
 import Testimonials from "../components/Testimonials"
 import Faq from "../components/Faq"
 import Pricing from "../components/Pricing"
+import Cta from "../components/Cta"
 
 
 const Home = () => {
@@ -34,6 +35,9 @@ const Home = () => {
     </div>
     <div className="pricing">
       <Pricing/>
+    </div>
+    <div className="cta">
+      <Cta/>
     </div>
     </>
   )
