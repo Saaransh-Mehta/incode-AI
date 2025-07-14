@@ -57,7 +57,8 @@ const Pricing = () => {
     }
   ]
   return (
-      <div className="bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]">
+      <div className="bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+
        
     <section className='pricing-page w-full flex justify-center items-center flex-col h-screen'>
       <div className="section-head flex justify-center items-center flex-col gap-4 mt-16">
