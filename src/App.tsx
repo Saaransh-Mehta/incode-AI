@@ -2,6 +2,7 @@ import { BrowserRouter, Routes,Route } from "react-router-dom"
 import { NavbarDemo } from "./components/Navbar"
 import Home from "./screens/Home"
 import { useEffect, useState } from "react";
+import Login from "./screens/Login";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState<boolean>(() => {
@@ -30,6 +31,7 @@ const App = () => {
      <NavbarDemo toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
     <Routes>
       <Route path="/" element={<Home/>} />
+      <Route path="/login" element={<Login/>} />
     </Routes>
     </BrowserRouter>
   )
