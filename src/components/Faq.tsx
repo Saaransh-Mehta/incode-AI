@@ -112,7 +112,7 @@ const Faq = () => {
   return (
     <motion.section 
       ref={sectionRef}
-      className='faq-page mt-16 mb-10'
+      className='faq-page mt-16 mb-10 h-screen'
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={{

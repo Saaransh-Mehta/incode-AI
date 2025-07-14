@@ -22,17 +22,7 @@ const Home = () => {
     </div>
     </div>
 
-    <div className="features-section mt-5">
-      <motion.div 
-      initial={{opacity:0,y:30}}
-      animate={{opacity:1,y:0}}
-      transition={{duration:0.5,delay:0.2,ease:'linear'}}
-      className="feature-head flex flex-col pt-10 justify-center items-center">
-        <button className="border border-neutral-300 shadow-xl text-neutral-500 p-3 rounded-3xl">Solutions</button>
-      <h1 className="header-text text-5xl font-normal mt-10 bebas">Solve Your Team's <br /> biggest challenges</h1>
-      </motion.div>
-   
-    </div>
+    
     <div className="feature-body w-full flex justify-center items-center ">
       <Features/>
     </div>
