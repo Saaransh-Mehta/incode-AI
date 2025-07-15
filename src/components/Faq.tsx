@@ -126,7 +126,7 @@ const Faq = () => {
     const currentCategory = categories.find(cat => cat.name === activeTab)
 
     return (
-        <section ref={sectionRef} className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-black relative overflow-hidden">
+        <section ref={sectionRef} className="py-20 bg-gradient-to-b bg-white dark:from-gray-900 dark:to-black relative overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-purple-600/20 rounded-full blur-3xl"></div>
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-green-400/20 to-blue-600/20 rounded-full blur-3xl"></div>

@@ -8,11 +8,11 @@ export function HeroSectionOne() {
   return (
     <div className="relative mx-auto my-10 flex max-w-[980px] flex-col items-center justify-center top-20">
      
-       <div className="inline-flex  items-center space-x-2 bg-black/90 rounded-full px-4 py-2 mb-8 border border-gray-700">
+       <div className="inline-flex  items-center space-x-2 bg-black/90 rounded-full px-1 py-2  border border-gray-700">
               <IconSparkles className="w-4 h-4 text-purple-400" />
               <span className="text-sm text-white/70">AI-Powered Landing Pages</span>
             </div>
-      <div className="px-4 py-10 md:py-20">
+      <div className="px-4 py-10 md:py-10">
         <h1 className="relative z-10  mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
           {"Create your website in hours, not days with smart AI"
             .split(" ")
