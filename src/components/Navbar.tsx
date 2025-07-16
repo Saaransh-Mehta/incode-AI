@@ -12,6 +12,7 @@ import {
 } from "../components/ui/resizable-navbar";
 import { useState } from "react";
 import { IconMoonFilled,IconSun } from "@tabler/icons-react";
+import { useNavigate } from "react-router-dom";
   interface NavbarProps {
   toggleDarkMode: () => void;
   darkMode: boolean;
@@ -19,7 +20,7 @@ import { IconMoonFilled,IconSun } from "@tabler/icons-react";
 
 export function NavbarDemo({ toggleDarkMode, darkMode }: NavbarProps) {
   // const [isNightMode,setIsNightMode] = useState(false)
-
+const navigate = useNavigate()
   const navItems = [
     {
       name: "Features",
@@ -34,24 +35,24 @@ export function NavbarDemo({ toggleDarkMode, darkMode }: NavbarProps) {
       link: "#contact",
     },
   ];
-
+const handleNavigate = ()=>{
+  navigate('/login')
+}
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <div className="relative w-full">
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <NavbarButton onClick={toggleDarkMode} variant="primary">{darkMode ? <><IconMoonFilled/></>:<><IconSun/></>}</NavbarButton>
-            <NavbarButton variant="secondary">Login</NavbarButton>
+            <NavbarButton onClick={handleNavigate} variant="secondary">Login</NavbarButton>
             <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>
         </NavBody>
 
-        {/* Mobile Navigation */}
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />

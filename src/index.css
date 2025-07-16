@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import 'tailwindcss';
 @import "tw-animate-css";
 
@@ -6,6 +7,9 @@
 
 .bebas{
   font-family: "Bebas Neue", sans-serif;
+}
+.winky{
+  font-family: "Winky Rough", sans-serif;
 }
 @theme inline {
   --animate-move: move 5s linear infinite;
