@@ -24,7 +24,6 @@ const Cta = () => {
     >
       <div className="max-w-6xl mx-auto px-6">
         
-        {/* Main CTA Container */}
         <motion.div 
           className="relative bg-black rounded-3xl overflow-hidden"
           variants={{
@@ -44,13 +43,11 @@ const Cta = () => {
             }
           }}
         >
-          {/* Background Pattern */}
           <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.05)_50%,transparent_75%)] bg-[length:60px_60px]"></div>
           
           <div className="relative z-10 px-8 py-16 lg:px-16 lg:py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               
-              {/* Left Content */}
               <motion.div 
                 className="space-y-8"
                 variants={{
@@ -83,7 +80,6 @@ const Cta = () => {
                   </p>
                 </div>
 
-                {/* Stats */}
                 <div className="flex flex-wrap gap-8">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-white">10K+</div>
@@ -99,7 +95,6 @@ const Cta = () => {
                   </div>
                 </div>
 
-                {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <motion.button 
                     className="group flex items-center justify-center gap-3 bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-gray-100 hover:scale-105"
@@ -125,7 +120,6 @@ const Cta = () => {
                 </p>
               </motion.div>
 
-              {/* Right Content - Visual Element */}
               <motion.div 
                 className="relative"
                 variants={{
@@ -145,7 +139,6 @@ const Cta = () => {
                 }}
               >
                 <div className="relative">
-                  {/* Floating Cards */}
                   <motion.div 
                     className="absolute top-0 right-0 bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-2xl shadow-2xl"
                     animate={{ 
@@ -183,7 +176,6 @@ const Cta = () => {
                     </div>
                   </motion.div>
 
-                  {/* Main Visual */}
                   <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-2xl border border-gray-700">
                     <div className="space-y-4">
                       <div className="flex items-center gap-3">
@@ -205,7 +197,6 @@ const Cta = () => {
           </div>
         </motion.div>
 
-        {/* Bottom Trust Indicators */}
         
       </div>
     </motion.section>

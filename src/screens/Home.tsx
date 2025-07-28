@@ -7,6 +7,7 @@ import Pricing from "../components/Pricing"
 import Cta from "../components/Cta"
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer"
+import { Element } from 'react-scroll';
 
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
   return (
     <>
 <NavbarDemo toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+<Element name="home" className="element">
 <div className="relative inset-0 -z-10 h-full w-full  bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]
 dark:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] 
 ">    
@@ -45,26 +47,43 @@ dark:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient
     
     </div>
     </div>
+</Element>
 
     
-    <div className="feature-body w-full flex justify-center items-center ">
+    <Element name="features" className="element">
+    <div id="features" className="feature-body w-full flex justify-center items-center ">
       <Features/>
     </div>
-    <div className="testimonials">
-      {/* <Testimonials/> */}
+    </Element>
+    
+    <Element name="testimonials" className="element">
+    <div id="testimonials" className="testimonials">
     </div>
+    </Element>
+    
+    <Element name="faq" className="element">
     <div className="faq">
       <Faq/>
     </div>
-    <div className="pricing">
+    </Element>
+    
+    <Element name="pricing" className="element">
+    <div id="pricing" className="pricing">
       <Pricing/>
     </div>
+    </Element>
+    
+    <Element name="cta" className="element">
     <div className="cta">
       <Cta/>
     </div>
+    </Element>
+    
+    <Element name="footer" className="element">
     <div className="footer">
       <Footer/>
     </div>
+    </Element>
     </>
   )
 }

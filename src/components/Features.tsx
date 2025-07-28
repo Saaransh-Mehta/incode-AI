@@ -10,7 +10,7 @@ const Features = () => {
 
   <div className="w-[90%] max-w-7xl mx-auto space-y-12">
     
-    {/* Section Header */}
+    
     <div className="text-center space-y-4 mb-16">
       <div className="flex justify-center items-center mb-6">
         <button className="p-3 rounded-3xl w-32 shadow-2xl border border-neutral-300 bg-white font-semibold text-gray-700 hover:shadow-lg transition-shadow duration-300">
@@ -25,13 +25,13 @@ const Features = () => {
       </p>
     </div>
 
-    {/* Upper Section - 2 equal columns */}
+   
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div className="border border-gray-200 h-[400px] flex flex-col justify-between w-full rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 p-8  dark:bg-gray-800 dark:border-gray-700 ">
         <div className="flex justify-center">
           <DotLottieReact
             className="h-48 w-48"
-            src="../../public/animations/animate.json"
+            src="/animations/animate.json"
             loop
             autoplay
           />
@@ -69,7 +69,6 @@ const Features = () => {
       </div>
     </div>
 
-    {/* Lower Section - 8/4 column split */}
     <div className="grid grid-cols-1 xl:grid-cols-12 gap-8">
       <div className="xl:col-span-8 border border-gray-200 min-h-[450px] w-full rounded-3xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 p-8 dark:bg-gray-800 dark:border-gray-700">
         <div className="h-full flex flex-col">
@@ -87,7 +86,6 @@ const Features = () => {
             </p>
           </div>
           
-          {/* Feature Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 flex-1">
             <div className="flex flex-col items-center text-center space-y-3 p-4 rounded-2xl bg-gradient-to-b from-blue-50 to-white dark:from-blue-800 dark:to-gray-800 border border-blue-100 dark:border-none">
               <div className="p-3 bg-blue-500 rounded-full">

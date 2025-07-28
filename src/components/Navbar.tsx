@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 }
 
 export function NavbarDemo({ toggleDarkMode, darkMode }: NavbarProps) {
-  // const [isNightMode,setIsNightMode] = useState(false)
+ 
 const navigate = useNavigate()
   const navItems = [
     {

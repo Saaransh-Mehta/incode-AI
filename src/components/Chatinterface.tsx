@@ -3,8 +3,9 @@ import { SearchIcon, SendIcon } from 'lucide-react';
 import TextareaAutosize from 'react-textarea-autosize';
 import { usePromptStore } from '../store/promptStore';
 import { motion } from 'motion/react';
+import { useNavigate } from 'react-router-dom';
 const Chatinterface = () => {
-
+  const navigate = useNavigate()
   const prompt = usePromptStore((state) => state.prompt);
   const setPrompt = usePromptStore((state) => state.setPrompt);
 
@@ -82,7 +83,10 @@ const Chatinterface = () => {
                 <IconReportSearch/>
               </button>
              </div>
-               <button title='generate' onClick={(e)=>console.log(prompt)} className="  px-2 py-2 rounded-2xl mr-4 hover:bg-gray-200 transition-colors">
+               <button title='generate' onClick={(e)=>{
+                navigate('/generate')
+                console.log(prompt)
+               }} className="  px-2 py-2 rounded-2xl mr-4 hover:bg-gray-200 transition-colors">
                <SendIcon/>
               </button>
              </div>

@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes,Route } from "react-router-dom"
-import { NavbarDemo } from "./components/Navbar"
+
 import Home from "./screens/Home"
-import { useEffect, useState } from "react";
 import Login from "./screens/Login";
 import AiScreen from "./screens/AiScreen";
+import AIcode from "./screens/AIcode";
 
 const App = () => {
   
@@ -14,6 +14,7 @@ const App = () => {
       <Route path="/" element={<Home/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/ai" element={<AiScreen/>}/>
+      <Route path="/generate" element={<AIcode/>}/>
     </Routes>
     </BrowserRouter>
   )
